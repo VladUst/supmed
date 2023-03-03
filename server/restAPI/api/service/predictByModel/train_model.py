@@ -4,7 +4,6 @@ import read_data
 import os
 from read_data import read_data
 
-
 def train_model():
     df_diseases_symptoms = read_data()
     x = df_diseases_symptoms[df_diseases_symptoms.columns[1:]]
@@ -17,5 +16,4 @@ def train_model():
     path = os.path.join(pre, saved_model)
     pickle.dump(model, open(path, 'wb'))
 
-
-# train_model()
+train_model()

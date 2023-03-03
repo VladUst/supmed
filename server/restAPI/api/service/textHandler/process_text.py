@@ -1,9 +1,14 @@
-from spacy.lang.en import English
+import spacy
 import scispacy
-nlp = English()
-doc = nlp("Two years from now, spam will be solved.")
-nlp.add_pipe("scispacy_linker", config={"linker_name": "umls"})
-fmt_str = "{:<8}| {:<10}| {:<10}| {:<10}"
-print(fmt_str.format("token", "is_alpha", "is_punct", "like_num"))
-for token in doc:
-    print(fmt_str.format(token.text, token.is_alpha, token.is_punct, token.like_num))
+from scispacy.linking import EntityLinker
+
+nlp = spacy.load("en_core_sci_sm")
+nlp.add_pipe("scispacy_linker", config={"resolve_abbreviations": True, "linker_name": "umls", "max_entities_per_mention": 3})
+doc = nlp("Patient has prostate cancer with metastatic disease to his bladder.")
+linker = nlp.get_pipe("scispacy_linker")
+fmt_str = "{:<20}| {:<10}| {:<32}| {:<20}"
+print(fmt_str.format("Entity", "1st CUI", "Canonical Name", "Definition"))
+for entity in doc.ents:
+    first_cuid = entity._.kb_ents[0][0]
+    kb_entry = linker.kb.cui_to_entity[first_cuid]
+    print(fmt_str.format(entity.text, first_cuid, kb_entry.canonical_name, kb_entry.definition[0:15] + "..."))
