@@ -4,7 +4,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import DiagnosedResultSerializer
 from .models import DiagnosedResult
-
+from .service.predictByModel import get_prediction as ml_model
+from .service.predictByOntology import get_prediction as onto_model
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -17,6 +18,18 @@ def apiOverview(request):
     }
     return Response(api_urls)
 
+
+@api_view(['POST'])
+def mlPredict(request):
+    data = request.data
+    result = {"prediction": ml_model.get_prediction(data["symptoms"])}
+    return JsonResponse(result)
+
+@api_view(['POST'])
+def ontoPredict(request):
+    data = request.data
+    result = {"prediction": onto_model.get_prediction(data["symptoms"])}
+    return JsonResponse(result)
 
 @api_view(['GET'])
 def diagnosesList(request):
