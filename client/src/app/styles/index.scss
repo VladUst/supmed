@@ -1,0 +1,12 @@
+@import "reset";
+@import "./variables/global";
+
+.app {
+  min-height: 100vh;
+  font: var(--font-m);
+}
+
+.content {
+  max-width: 70vw;
+  margin: 0 auto;
+}
