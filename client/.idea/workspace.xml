@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/variables/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/types/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/lib/classNames.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/TextArea/TextArea.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/TextArea/TextArea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/EntityItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/List/List.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/List/List.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/EntitiesList/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/EntitiesList/model/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntitiesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntititesList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,26 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/vladus/Projects/Fullstack/Experimental/supmed/client/.stylelintrc.json",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "/home/vladus/Projects/Fullstack/Experimental/supmed/client/node_modules/stylelint",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.stylesheets.stylelint",
-    "ts.external.directory.path": "/home/vladus/Projects/Fullstack/Experimental/supmed/client/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vladus/Projects/WebProjects/supmed/client&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/home/vladus/Projects/Fullstack/Experimental/supmed/client/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/vladus/Projects/WebProjects/supmed/client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/shared" />
@@ -81,6 +78,10 @@
       <option name="presentableId" value="Default" />
       <updated>1678013858031</updated>
       <workItem from="1678013859149" duration="12152000" />
+      <workItem from="1678101628562" duration="2792000" />
+      <workItem from="1678105165859" duration="816000" />
+      <workItem from="1678106300992" duration="201000" />
+      <workItem from="1678174028959" duration="2534000" />
     </task>
     <servers />
   </component>
