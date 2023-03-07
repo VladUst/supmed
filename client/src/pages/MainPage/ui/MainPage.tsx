@@ -3,6 +3,8 @@ import cls from './MainPage.module.scss';
 import { ProcessAnamnesis } from '../../../features/ProcessAnamnesis';
 import { EntitiesList } from '../../../widgets/EntitiesList';
 import { type EntityItem } from '../../../entities';
+import { DiseasesDiagnostic } from '../../../features/DiseasesDiagnostic';
+import { ResultNote } from '../../../features/ResultNote';
 
 const items: EntityItem[] = [
   {
@@ -29,6 +31,8 @@ export const MainPage = () => {
       <main>
           <ProcessAnamnesis className={cls.anamnesisArea}/>
           <EntitiesList items={items}/>
+          <DiseasesDiagnostic className={cls.diagnosticArea}/>
+          <ResultNote />
       </main>
   );
 };

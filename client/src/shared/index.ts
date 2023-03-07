@@ -1,2 +1,2 @@
 export { classNames } from './lib/classNames';
-export { TextArea } from './ui/TextArea/TextArea';
+export { ChipsArray } from './ui/ChipsArray/ChipsArray';

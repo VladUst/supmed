@@ -1,10 +1,11 @@
-.DiseasesDiagnostic {
+.ResultNote {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   textarea {
     transition: outline ease-in 0.1s;
+    padding: 10px;
     &:focus {
       border-radius: 10px;
       outline: 5px solid rgba(55, 113, 236, 0.24);
@@ -12,6 +13,11 @@
   }
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
 .btns {
   margin-left: auto;
 }

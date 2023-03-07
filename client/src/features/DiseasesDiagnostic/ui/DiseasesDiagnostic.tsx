@@ -1,8 +1,9 @@
-import cls from './DiseasesDignostic.module.scss';
-import { classNames } from '../../../shared';
+import { ChipsArray, classNames } from '../../../shared';
 import React, { memo, useState } from 'react';
-import { Button } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
+import { Button, TextField } from '@mui/material';
+import DiagnosticIcon from '@mui/icons-material/Settings';
+import cls from './DiseasesDiagnostic.module.scss';
+import { type ChipData } from '../../../shared/ui/ChipsArray/ChipsArray';
 interface DiseasesDiagnosticProps {
   className?: string
 }
@@ -10,37 +11,45 @@ interface DiseasesDiagnosticProps {
 export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
   const { className } = props;
   const [text, setText] = useState<string>('');
-  function handleSubmit (e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    console.log(text);
+  const [symptoms, setSymptoms] = useState<ChipData[]>([]);
+
+  const deleteSymptom = (symptomToDelete: ChipData) => () => {
+    setSymptoms((symptoms) => symptoms.filter((symptom) => symptom.label !== symptomToDelete.label));
+  };
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value.endsWith(',') || value.endsWith(';')) {
+      setSymptoms([...symptoms, { label: text }]);
+      setText('');
+    } else {
+      setText(e.target.value);
+    }
+  };
+
+  function handleSubmit (e: React.MouseEvent<HTMLButtonElement>) {
+    const symptomsArray = symptoms.map(symptom => symptom.label);
+    console.log(symptomsArray);
     // fetch('/some-api', { method: form.method, body: formData });
   }
 
   return (
       <form className={classNames(cls.DiseasesDiagnostic, {}, [className])}
-              method="post"
-              onSubmit={handleSubmit}
-        >
-          <label>Введите перечень симптомов</label>
-          <textarea
-                value={text}
-                onChange={e => { setText(e.target.value); }}
-                rows={5}
-                cols={40}
-            />
+            method="post"
+          >
+          <label>Перечислите симптомы через запятую</label>
+          <TextField value={text}
+                     onChange={handleInput}
+                     label="Симптомы"
+                     variant="standard" />
+          <ChipsArray data={symptoms} deleteHandler={deleteSymptom}/>
           <div className={cls.btns}>
-              <Button type="submit"
+              <Button
                       variant="contained"
-                      endIcon={<SendIcon />}
-                      onClick={e => { setText(''); }}
-              >
-                  Онтология
-              </Button>
-              <Button type="submit"
-                      variant="contained"
-                      endIcon={<SendIcon />}
-              >
-                  Машинное обучение
+                      endIcon={<DiagnosticIcon/>}
+                      onClick={handleSubmit}
+                  >
+                  Диагностика
               </Button>
           </div>
       </form>
