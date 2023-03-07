@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.stylelintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/variables/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/types/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/lib/classNames.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/TextArea/TextArea.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/TextArea/TextArea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="client init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,8 +56,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678013858031</updated>
-      <workItem from="1678013859149" duration="12152000" />
+      <workItem from="1678013859149" duration="12665000" />
     </task>
+    <task id="LOCAL-00001" summary="client init">
+      <created>1678026489067</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678026489067</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +73,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="client init" />
+    <option name="LAST_COMMIT_MESSAGE" value="client init" />
   </component>
 </project>
