@@ -3,6 +3,7 @@ import { classNames } from '../../../shared';
 import cls from './ProcessAnamnesis.module.scss';
 import SendIcon from '@mui/icons-material/Send';
 import { Button } from '@mui/material';
+
 interface ProcessAnamnesisProps {
   className?: string
 }
@@ -20,7 +21,7 @@ export const ProcessAnamnesis = memo((props: ProcessAnamnesisProps) => {
             method="post"
             onSubmit={handleSubmit}
       >
-          <label>Введите анамнез</label>
+          <label>Введите анамнез:</label>
           <textarea
                 value={text}
                 onChange={e => { setText(e.target.value); }}

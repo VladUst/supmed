@@ -1,9 +1,12 @@
-import { ChipsArray, classNames } from '../../../shared';
 import React, { memo, useState } from 'react';
 import { Button, TextField } from '@mui/material';
 import DiagnosticIcon from '@mui/icons-material/Settings';
 import cls from './DiseasesDiagnostic.module.scss';
-import { type ChipData } from '../../../shared/ui/ChipsArray/ChipsArray';
+import { type ChipData, ChipsArray } from '../../../shared/ui/ChipsArray/ChipsArray';
+import { type DiseaseType } from '../model/types';
+import { classNames, Text } from '../../../shared';
+
+const resultDiseases: DiseaseType[] = [{ name: 'ostehondros' }, { name: 'osteoporos' }, { name: 'illnes' }];
 interface DiseasesDiagnosticProps {
   className?: string
 }
@@ -34,24 +37,36 @@ export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
   }
 
   return (
-      <form className={classNames(cls.DiseasesDiagnostic, {}, [className])}
+      <>
+          <form className={classNames(cls.DiseasesDiagnostic, {}, [className])}
             method="post"
           >
-          <label>Перечислите симптомы через запятую</label>
-          <TextField value={text}
+              <label>Перечислите симптомы через запятую:</label>
+              <TextField value={text}
                      onChange={handleInput}
                      label="Симптомы"
                      variant="standard" />
-          <ChipsArray data={symptoms} deleteHandler={deleteSymptom}/>
-          <div className={cls.btns}>
-              <Button
+              <ChipsArray data={symptoms} deleteHandler={deleteSymptom}/>
+              <div className={cls.btns}>
+                  <Button
                       variant="contained"
                       endIcon={<DiagnosticIcon/>}
                       onClick={handleSubmit}
                   >
-                  Диагностика
-              </Button>
+                      Диагностика
+                  </Button>
+              </div>
+          </form>
+          <div className={cls.result}>
+              <Text title={'Результаты диагностики: '} />
+              <ul>
+                  {resultDiseases.map((disease) => (
+                      <li key={disease.name}>
+                          {disease.name}
+                      </li>)
+                  )}
+              </ul>
           </div>
-      </form>
+      </>
   );
 });

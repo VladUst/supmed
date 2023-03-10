@@ -32,7 +32,7 @@ export const MainPage = () => {
           <ProcessAnamnesis className={cls.anamnesisArea}/>
           <EntitiesList items={items}/>
           <DiseasesDiagnostic className={cls.diagnosticArea}/>
-          <ResultNote />
+          <ResultNote className={cls.noteForm} />
       </main>
   );
 };
