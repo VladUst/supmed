@@ -6,6 +6,8 @@ from .serializers import DiagnosedResultSerializer
 from .models import DiagnosedResult
 from .service.predictByModel import get_prediction as ml_model
 from .service.predictByOntology import get_prediction as onto_model
+from .service.textHandler import process_text as nlp_model
+from .service.textHandler.NLPModel import NLPModel
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -20,16 +22,25 @@ def apiOverview(request):
 
 
 @api_view(['POST'])
+def processText(request):
+    data = request.data
+    result = {"entities": NLPModel.process_text(NLPModel, data["text"])}
+    return JsonResponse(result)
+
+
+@api_view(['POST'])
 def mlPredict(request):
     data = request.data
     result = {"prediction": ml_model.get_prediction(data["symptoms"])}
     return JsonResponse(result)
+
 
 @api_view(['POST'])
 def ontoPredict(request):
     data = request.data
     result = {"prediction": onto_model.get_prediction(data["symptoms"])}
     return JsonResponse(result)
+
 
 @api_view(['GET'])
 def diagnosesList(request):

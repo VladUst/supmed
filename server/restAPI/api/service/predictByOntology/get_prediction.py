@@ -21,6 +21,3 @@ def get_prediction(sympotms):
     sparql_query = dis_prefix + rdf_prefix + query_type + where_type
     predictions = list(default_world.sparql(sparql_query))[0]
     return predictions
-
-
-print(get_prediction(["hoarseness", "cough", "stridor"]))
