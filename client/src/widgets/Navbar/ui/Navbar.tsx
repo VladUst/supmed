@@ -12,6 +12,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
           <div className={cls.links}>
               <a href="#">Диагностика</a>
               <a href="#">История</a>
+              <a href="#">Обновить данные</a>
           </div>
       </header>
   );

@@ -5,11 +5,10 @@ import { EntitiesList } from '../../../widgets/EntitiesList';
 import { type EntityItem } from '../../../entities';
 import { DiseasesDiagnostic } from '../../../features/DiseasesDiagnostic';
 import { ResultNote } from '../../../features/ResultNote';
-
 const items: EntityItem[] = [
   {
     name: 'cough',
-    TUI: '047',
+    TUI: 'T047',
     info: {
       CUI: '215435435',
       originalName: 'dafasfas',
@@ -18,7 +17,16 @@ const items: EntityItem[] = [
   },
   {
     name: 'back pain',
-    TUI: '080',
+    TUI: 'T184',
+    info: {
+      CUI: '542',
+      originalName: 'qerwetrqwtqwretwe',
+      definition: 'zcxbzcvnxvvbzxcvczxcvzxcbxvvncvxbvxzcvxz'
+    }
+  },
+  {
+    name: 'Patient',
+    TUI: 'T50',
     info: {
       CUI: '542',
       originalName: 'qerwetrqwtqwretwe',
@@ -30,7 +38,7 @@ export const MainPage = () => {
   return (
       <main>
           <ProcessAnamnesis className={cls.anamnesisArea}/>
-          <EntitiesList items={items}/>
+          {/* <EntitiesList items={items}/> */}
           <DiseasesDiagnostic className={cls.diagnosticArea}/>
           <ResultNote className={cls.noteForm} />
       </main>

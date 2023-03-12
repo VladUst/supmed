@@ -1,4 +1,5 @@
 .entityDescription {
+  margin-bottom: 10px;
   span{
     color: var(--blue-primary);
     font-weight: 700;
@@ -6,8 +7,13 @@
   }
 }
 
-.titleText {
+.titleCommon {
   color: var(--blue-secondary);
+  font: var(--font-l);
+}
+
+.titleDanger {
+  color: var(--red-dark);
   font: var(--font-l);
 }
 

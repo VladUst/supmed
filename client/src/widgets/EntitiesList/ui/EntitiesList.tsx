@@ -12,6 +12,11 @@ interface EntitiesListProps {
 }
 export const EntitiesList = memo((props: EntitiesListProps) => {
   const { className, items } = props;
+  if (!items?.length) {
+    return (
+        <Text title={'Сущности не найдены'} align={'center'}/>
+    );
+  }
   return (
       <div className={classNames(cls.EntitiesList, {}, [className])}>
           <List>
@@ -21,6 +26,5 @@ export const EntitiesList = memo((props: EntitiesListProps) => {
               ))}
           </List>
       </div>
-
   );
 });

@@ -50,6 +50,7 @@ export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
               <div className={cls.btns}>
                   <Button
                       variant="contained"
+                      startIcon={<DiagnosticIcon/>}
                       endIcon={<DiagnosticIcon/>}
                       onClick={handleSubmit}
                   >

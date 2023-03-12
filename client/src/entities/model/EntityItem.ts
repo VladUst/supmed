@@ -1,7 +1,6 @@
 export interface EntityItem {
   name: string
   TUI: string
-  open?: boolean
   info: EntityInfo
 }
 

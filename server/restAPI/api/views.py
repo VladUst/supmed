@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -6,7 +5,6 @@ from .serializers import DiagnosedResultSerializer
 from .models import DiagnosedResult
 from .service.predictByModel import get_prediction as ml_model
 from .service.predictByOntology import get_prediction as onto_model
-from .service.textHandler import process_text as nlp_model
 from .service.textHandler.NLPModel import NLPModel
 
 @api_view(['GET'])
