@@ -39,6 +39,19 @@ def ontoPredict(request):
     result = {"prediction": onto_model.get_prediction(data["symptoms"])}
     return JsonResponse(result)
 
+@api_view(['POST'])
+def mlPredict(request):
+    data = request.data
+    result = {"prediction": ml_model.get_prediction(data["symptoms"])}
+    return JsonResponse(result)
+
+
+@api_view(['POST'])
+def predictDiseases(request):
+    data = request.data
+    result = {"ontologyPrediction": onto_model.get_prediction(data["symptoms"]),
+              "mlPrediction": ml_model.get_prediction(data["symptoms"])}
+    return JsonResponse(result)
 
 @api_view(['GET'])
 def diagnosesList(request):

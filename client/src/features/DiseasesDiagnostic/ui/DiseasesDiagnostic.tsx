@@ -3,18 +3,49 @@ import { Button, TextField } from '@mui/material';
 import DiagnosticIcon from '@mui/icons-material/Settings';
 import cls from './DiseasesDiagnostic.module.scss';
 import { type ChipData, ChipsArray } from '../../../shared/ui/ChipsArray/ChipsArray';
-import { type DiseaseType } from '../model/types';
+import { type DiseaseSchema } from '../model/types';
 import { classNames, Text } from '../../../shared';
+import { useAppDispatch } from '../../../app/providers/StoreProvider';
+import { diagnosticActions } from '../model/diagnosticSlice';
+import { diagnosticRequest } from '../model/diagnosticRequest';
+import { useSelector } from 'react-redux';
+import { getDiagnosticState } from '../model/getDiagnosticState';
+import { PageLoader } from '../../../widgets/PageLoader/PageLoader';
+import { EntitiesList } from '../../../entities';
 
-const resultDiseases: DiseaseType[] = [{ name: 'ostehondros' }, { name: 'osteoporos' }, { name: 'illnes' }];
+const resultDiseases: DiseaseSchema[] = [{ name: 'ostehondros' }, { name: 'osteoporos' }, { name: 'illnes' }];
 interface DiseasesDiagnosticProps {
   className?: string
 }
 
+interface DiseasesListProps {
+  diseases: DiseaseSchema[]
+}
+const DiseasesList = ({ diseases }: DiseasesListProps) => {
+  if (!diseases.length) {
+    return (
+        <Text title={'Нет результатов'} align={'center'}/>
+    );
+  }
+  return (
+      <div className={cls.result}>
+          <Text title={'Результаты диагностики: '} />
+          <ul>
+              {diseases.map((disease) => (
+                  <li key={disease.name}>
+                      {disease.name}
+                  </li>)
+              )}
+          </ul>
+      </div>
+  );
+};
 export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
   const { className } = props;
   const [text, setText] = useState<string>('');
   const [symptoms, setSymptoms] = useState<ChipData[]>([]);
+  const dispatch = useAppDispatch();
+  const { diseases, isLoading, error } = useSelector(getDiagnosticState);
 
   const deleteSymptom = (symptomToDelete: ChipData) => () => {
     setSymptoms((symptoms) => symptoms.filter((symptom) => symptom.label !== symptomToDelete.label));
@@ -32,7 +63,8 @@ export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
 
   function handleSubmit (e: React.MouseEvent<HTMLButtonElement>) {
     const symptomsArray = symptoms.map(symptom => symptom.label);
-    console.log(symptomsArray);
+    dispatch(diagnosticActions.setSymptoms(symptomsArray));
+    dispatch(diagnosticRequest({ symptoms: symptomsArray }));
     // fetch('/some-api', { method: form.method, body: formData });
   }
 
@@ -58,16 +90,7 @@ export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
                   </Button>
               </div>
           </form>
-          <div className={cls.result}>
-              <Text title={'Результаты диагностики: '} />
-              <ul>
-                  {resultDiseases.map((disease) => (
-                      <li key={disease.name}>
-                          {disease.name}
-                      </li>)
-                  )}
-              </ul>
-          </div>
+          {isLoading ? <PageLoader/> : <DiseasesList diseases={diseases}/>}
       </>
   );
 });

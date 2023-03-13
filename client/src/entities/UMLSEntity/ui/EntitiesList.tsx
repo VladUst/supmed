@@ -4,7 +4,7 @@ import {
 import { memo } from 'react';
 import { classNames, Text } from '../../../shared';
 import cls from './EntititesList.module.scss';
-import { type EntityItem, UMLSEntity } from '../../../entities';
+import { type EntityItem, UMLSEntity } from '../../index';
 
 interface EntitiesListProps {
   className?: string

@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react';
-import { classNames, Text } from '../../../shared';
+import { classNames } from '../../../shared';
 import cls from './ProcessAnamnesis.module.scss';
 import SendIcon from '@mui/icons-material/Send';
 import { Button } from '@mui/material';
@@ -7,8 +7,8 @@ import { useSelector } from 'react-redux';
 import { getProcessAnamnesisState } from '../model/getProcessAnamnesisState';
 import { processAnamnesisRequest } from '../model/processAnamnesisRequest';
 import { useAppDispatch } from '../../../app/providers/StoreProvider';
-import { EntitiesList } from '../../../widgets/EntitiesList';
 import { PageLoader } from '../../../widgets/PageLoader/PageLoader';
+import { EntitiesList } from '../../../entities';
 
 interface ProcessAnamnesisProps {
   className?: string

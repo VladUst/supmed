@@ -4,52 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="symptoms and note forms">
-      <change afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/StateSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/ui/StoreProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/getProcessAnamnesisState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSchema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Loader/Loader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/Loader/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/PageLoader/PageLoader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/PageLoader/PageLoader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/checks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/defaults.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/corsheaders/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/django_cors_headers-3.14.0.dist-info/top_level.txt" afterDir="false" />
+    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="process anamnesis api integration">
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/diagnosticRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/diagnosticSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/getDiagnosticState.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/EntityItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/model/EntityItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/StateSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/StateSchema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/model/EntityItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/model/EntityItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/UMLSEntity.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/UMLSEntity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Text/Text.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Text/Text.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/Text/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Text/Text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntitiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntitiesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntitiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/EntitiesList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntititesList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/EntititesList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/get_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/get_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/prediction_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/prediction_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/train_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/restAPI/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/restAPI/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/restAPI/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +71,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities/UMLSEntity/ui" />
+      <recent name="$PROJECT_DIR$/src/entities/UMLSEntity" />
       <recent name="$PROJECT_DIR$/src/shared" />
       <recent name="$PROJECT_DIR$/src/widgets/Navbar" />
       <recent name="$PROJECT_DIR$/src/app" />
@@ -115,7 +94,8 @@
       <workItem from="1678617839292" duration="4775000" />
       <workItem from="1678622990320" duration="280000" />
       <workItem from="1678623652905" duration="118000" />
-      <workItem from="1678625142989" duration="3013000" />
+      <workItem from="1678625142989" duration="3173000" />
+      <workItem from="1678699613258" duration="3161000" />
     </task>
     <task id="LOCAL-00001" summary="client init">
       <created>1678026489067</created>
@@ -145,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678192297360</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="process anamnesis api integration">
+      <created>1678629213414</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678629213414</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +143,7 @@
     <MESSAGE value="client init" />
     <MESSAGE value="xml change" />
     <MESSAGE value="symptoms and note forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="symptoms and note forms" />
+    <MESSAGE value="process anamnesis api integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="process anamnesis api integration" />
   </component>
 </project>

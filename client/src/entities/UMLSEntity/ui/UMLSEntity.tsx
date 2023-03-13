@@ -14,7 +14,8 @@ export const UMLSEntity = memo((props: UMLSEntityProps) => {
     setOpen(open => !open);
   };
   const checkDangerTUI = useCallback((tui: string) => {
-    return tui === 'T047' || tui === 'T184';
+    const tuiCode = tui.split('-')[0].trim();
+    return tuiCode === 'T047' || tuiCode === 'T184';
   }, []);
   return (
       <>
