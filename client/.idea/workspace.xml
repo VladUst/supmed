@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="process anamnesis api integration">
-      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/diagnosticRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/diagnosticSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/getDiagnosticState.ts" afterDir="false" />
+    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="diagnostic api integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/StateSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/StateSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/StoreProvider/config/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/EntityItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/model/EntityItem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/UMLSEntity.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/UMLSEntity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/UMLSEntity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/model/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntitiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/EntitiesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/EntitiesList/ui/EntititesList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/UMLSEntity/ui/EntititesList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/get_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/get_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/prediction_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/prediction_model.sav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/service/predictByModel/train_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +75,8 @@
       <workItem from="1678623652905" duration="118000" />
       <workItem from="1678625142989" duration="3173000" />
       <workItem from="1678699613258" duration="3161000" />
+      <workItem from="1678703747596" duration="280000" />
+      <workItem from="1678976587441" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="client init">
       <created>1678026489067</created>
@@ -132,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678629213414</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="diagnostic api integration">
+      <created>1678703968578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678703968578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +132,7 @@
     <MESSAGE value="xml change" />
     <MESSAGE value="symptoms and note forms" />
     <MESSAGE value="process anamnesis api integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="process anamnesis api integration" />
+    <MESSAGE value="diagnostic api integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="diagnostic api integration" />
   </component>
 </project>

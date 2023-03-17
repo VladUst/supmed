@@ -4,3 +4,6 @@
 __pycache__
 db.sqlite3
 media
+/restAPI/api/service/umlsService/pym.sqlite3
+/restAPI/api/service/umlsService/pym.sqlite3-journal
+/restAPI/api/service/umlsService/umls-2022AB-metathesaurus-full.zip

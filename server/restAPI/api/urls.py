@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
 
 urlpatterns = [
@@ -7,7 +7,11 @@ urlpatterns = [
     path('onto-predict/', views.ontoPredict, name="onto-predict"),
     path('predict-diseases/', views.predictDiseases, name="predict-diseases"),
     path('process-text/', views.processText, name="process-text"),
-    path('diagnoses-list/', views.diagnosesList, name="diagnoses-list"),
+    path('chapters-list/',
+         views.chaptersList, name="chapters-list"),
+    path('blocks-list/<str:chapter_name>/',
+         views.blocksList, name="blocks-list"),
+    path('diagnoses-list/<str:block_name>/', views.diagnosesList, name="diagnoses-list"),
     path('diagnosis-detail/<str:pk>/',
          views.diagnosisDetail, name="diagnosis-detail"),
     path('diagnosis-create/',
