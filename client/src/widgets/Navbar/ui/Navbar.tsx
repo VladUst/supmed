@@ -1,6 +1,8 @@
 import { memo } from 'react';
 import { classNames } from '../../../shared';
 import cls from './Navbar.module.scss';
+import { AppLink } from '../../../shared/ui/AppLink/AppLink';
+import { RoutePath } from '../../../app/providers/Router/routeConfig';
 interface NavbarProps {
   className?: string
 }
@@ -10,8 +12,8 @@ export const Navbar = memo(({ className }: NavbarProps) => {
       <header className={classNames(cls.Navbar, {}, [className])}>
           <a className={cls.logo} href="#">SupMed</a>
           <div className={cls.links}>
-              <a href="#">Диагностика</a>
-              <a href="#">История</a>
+              <AppLink to={RoutePath.main}>Диагностика</AppLink>
+              <AppLink to={RoutePath.chapters}>История</AppLink>
               <a href="#">Обновить данные</a>
           </div>
       </header>

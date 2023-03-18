@@ -1,8 +1,9 @@
 import React, { memo, useState } from 'react';
-import { classNames } from '../../../shared';
+import { classNames, Text } from '../../../shared';
 import cls from './ResultNote.module.scss';
 import CreateIcon from '@mui/icons-material/Create';
 import { Button, TextField } from '@mui/material';
+import axios from 'axios';
 interface ResultNoteProps {
   className?: string
 }
@@ -11,10 +12,19 @@ export const ResultNote = memo((props: ResultNoteProps) => {
   const [doctor, setDoctor] = useState<string>('');
   const [symptoms, setSymptoms] = useState<string>('');
   const [diagnosis, setDiagnosis] = useState<string>('');
-  const [details, setDetails] = useState<string>('');
-  function handleSubmit (e: React.FormEvent<HTMLFormElement>) {
+  const [description, setDescription] = useState<string>('');
+  const [status, setStatus] = useState<string>('');
+
+  async function handleSubmit (e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // fetch('/some-api', { metshod: form.method, body: formData });
+    setStatus('');
+    const url = 'http://127.0.0.1:8000/api/diagnosis-create/';
+    const response = await axios.post(url, {
+      doctor, symptoms, diagnosis, description
+    });
+    if (response.data) {
+      setStatus('Успешно сохранено');
+    }
   }
 
   return (
@@ -38,12 +48,13 @@ export const ResultNote = memo((props: ResultNoteProps) => {
                          variant="outlined"/>
           </div>
           <textarea
-              value={details}
+              value={description}
               placeholder={'Подробное описание'}
-              onChange={e => { setDetails(e.target.value); }}
+              onChange={e => { setDescription(e.target.value); }}
               rows={2}
               cols={40}
           />
+          {status && <Text text={status} align={'center'}/>}
           <div className={cls.btns}>
               <Button type="submit" variant="contained" endIcon={<CreateIcon />}>Сохранить</Button>
           </div>

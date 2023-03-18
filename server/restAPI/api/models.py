@@ -23,7 +23,7 @@ class DiagnosticResult(models.Model):
     doctor = models.CharField(max_length=50)
     symptoms = models.CharField(max_length=200)
     diagnosis = models.CharField(max_length=100)
-    description = models.CharField(max_length=1000)
+    description = models.CharField(max_length=1000, blank=True)
     icd_code = models.CharField(max_length=10)
     block = models.ForeignKey(ICDBlock, on_delete=models.CASCADE, related_name='diagnoses')
 

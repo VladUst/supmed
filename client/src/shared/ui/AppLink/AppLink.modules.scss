@@ -1,0 +1,16 @@
+.AppLink {
+  color: var(--blue-primary);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.primary {
+  color: var(--blue-primary);
+}
+
+.secondary {
+  color: var(--blue-secondary);
+}

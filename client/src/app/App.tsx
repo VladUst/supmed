@@ -1,13 +1,13 @@
 import React from 'react';
 import { Navbar } from '../widgets/Navbar';
-import { MainPage } from '../pages/MainPage';
+import { AppRouter } from './providers/Router';
 
 function App () {
   return (
       <div className="app">
           <Navbar/>
           <div className="content">
-              <MainPage/>
+              <AppRouter/>
           </div>
       </div>
   );
