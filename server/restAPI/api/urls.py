@@ -7,6 +7,7 @@ urlpatterns = [
     path('onto-predict/', views.ontoPredict, name="onto-predict"),
     path('predict-diseases/', views.predictDiseases, name="predict-diseases"),
     path('process-text/', views.processText, name="process-text"),
+    path('gpt-recommendations/', views.GPTRecommendations, name="gpt-recommendations"),
     path('chapters-list/',
          views.chaptersList, name="chapters-list"),
     path('blocks-list/<str:chapter_name>/',

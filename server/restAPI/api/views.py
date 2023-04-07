@@ -8,6 +8,7 @@ from .service.predictByModel import get_prediction as ml_model
 from .service.predictByOntology import get_prediction as onto_model
 from .service.textHandler.NLPModel import NLPModel
 from .service.umlsService.UMLSService import UMLSService
+from .service.GPTService.get_gpt_recommendations import get_gpt_recommendations
 from .service.umlsService.icd_translate import get_icd_info
 
 
@@ -27,6 +28,13 @@ def apiOverview(request):
 def processText(request):
     data = request.data
     result = {"entities": NLPModel.process_text(NLPModel, data["text"])}
+    return JsonResponse(result)
+
+
+@api_view(['POST'])
+def GPTRecommendations(request):
+    data = request.data
+    result = {"recommendations": get_gpt_recommendations(data["text"])}
     return JsonResponse(result)
 
 

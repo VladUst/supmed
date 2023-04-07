@@ -5,6 +5,7 @@ import { ProcessAnamnesis } from '../../../features/ProcessAnamnesis';
 import { EntitiesList, type EntityItem } from '../../../entities';
 import { DiseasesDiagnostic } from '../../../features/DiseasesDiagnostic';
 import { ResultNote } from '../../../features/ResultNote';
+import { GPTRecommendations } from '../../../features/GPTRecommendations';
 const items: EntityItem[] = [{
   name: 'cough',
   TUI: 'T047',
@@ -38,6 +39,7 @@ export const MainPage = () => {
       <main>
           <ProcessAnamnesis className={cls.anamnesisArea}/>
           <DiseasesDiagnostic className={cls.diagnosticArea}/>
+          <GPTRecommendations className={cls.gptRecommendations}/>
           <ResultNote className={cls.noteForm} />
       </main>
   );

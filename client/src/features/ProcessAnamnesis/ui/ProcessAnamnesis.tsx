@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo, useCallback, useState } from 'react';
 import { classNames } from '../../../shared';
 import cls from './ProcessAnamnesis.module.scss';
 import SendIcon from '@mui/icons-material/Send';
@@ -9,6 +9,7 @@ import { processAnamnesisRequest } from '../model/processAnamnesisRequest';
 import { useAppDispatch } from '../../../app/providers/StoreProvider';
 import { PageLoader } from '../../../widgets/PageLoader/PageLoader';
 import { EntitiesList } from '../../../entities';
+import { processAnamnesisActions } from '../model/processAnamnesisSlice';
 
 interface ProcessAnamnesisProps {
   className?: string
@@ -16,11 +17,16 @@ interface ProcessAnamnesisProps {
 export const ProcessAnamnesis = memo((props: ProcessAnamnesisProps) => {
   const { className } = props;
   const dispatch = useAppDispatch();
-  const { entitiesList, isLoading, error } = useSelector(getProcessAnamnesisState);
+  const { entitiesList, isLoading, anamnesis, error } = useSelector(getProcessAnamnesisState);
   const [text, setText] = useState<string>('');
+
+  const onChangeAnamnesis = useCallback((value: string) => {
+    dispatch(processAnamnesisActions.setAnamnesis(value));
+  }, [dispatch]);
   function handleSubmit (e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    dispatch(processAnamnesisRequest({ text }));
+    console.log(anamnesis);
+    dispatch(processAnamnesisRequest({ text: anamnesis }));
   }
 
   return (
@@ -31,8 +37,8 @@ export const ProcessAnamnesis = memo((props: ProcessAnamnesisProps) => {
           >
               <label>Введите анамнез:</label>
               <textarea
-                  value={text}
-                  onChange={e => { setText(e.target.value); }}
+                  value={anamnesis}
+                  onChange={e => { onChangeAnamnesis(e.target.value); }}
                   rows={5}
                   cols={40}
               />

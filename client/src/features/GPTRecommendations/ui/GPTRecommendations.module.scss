@@ -1,0 +1,16 @@
+.GPTRecommendations {
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.result {
+  border-radius: 20px;
+  box-shadow: 3px 2px 15px -1px rgba(34, 60, 80, 0.2);
+  padding: 20px;
+  margin-top: 30px;
+}
+.recommendations {
+  white-space: pre-wrap;
+}

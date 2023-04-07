@@ -20,7 +20,7 @@ export const ChaptersHistoryPage = () => {
   }
   const renderCard = useCallback((item: ICDSectionType) =>
       <SectionCard
-                name={item.name}
+                name={'Chapter ' + item.name}
                 description={item.description}
                 nextPage={RoutePath.blocks + item.name}
                 key={item.name}

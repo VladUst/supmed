@@ -1,22 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { type processAnamnesisSchema } from './processAnamnesisSchema';
 import { processAnamnesisRequest } from './processAnamnesisRequest';
 
 const initialState: processAnamnesisSchema = {
   entitiesList: undefined,
-  isLoading: false
+  isLoading: false,
+  anamnesis: ''
 };
 
 export const processAnamnesisSlice = createSlice({
   name: 'process-anamnesis',
   initialState,
   reducers: {
-    /* setUsername: (state, action: PayloadAction<string>) => {
-      state.username = action.payload;
-    },
-    setPassword: (state, action: PayloadAction<string>) => {
-      state.password = action.payload;
-    } */
+    setAnamnesis: (state, action: PayloadAction<string>) => {
+      state.anamnesis = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder
