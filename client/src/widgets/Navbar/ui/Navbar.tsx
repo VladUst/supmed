@@ -14,7 +14,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
           <div className={cls.links}>
               <AppLink to={RoutePath.main}>Диагностика</AppLink>
               <AppLink to={RoutePath.chapters}>История</AppLink>
-              <a href="#">Обновить данные</a>
+              <AppLink to={RoutePath.update}>Обновить данные</AppLink>
           </div>
       </header>
   );

@@ -1,0 +1,15 @@
+.itemText {
+  color: var(--blue-secondary);
+}
+
+.blockItemWrapper {
+  margin-left: 20px;
+}
+
+.blockTableWrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

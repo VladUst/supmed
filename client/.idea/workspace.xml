@@ -5,249 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="icd diagnosis result api integration">
-      <change afterPath="$PROJECT_DIR$/src/features/GPTRecommendations/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/GPTRecommendations/ui/GPTRecommendations.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/GPTRecommendations/ui/GPTRecommendations.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/GPTService/get_gpt_recommendations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/model/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/imdex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/ui/UpdateDataPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/ui/UpdateDataPage.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/pym.sqlite3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/pym.sqlite3-journal" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/umls-2022AB-metathesaurus-full.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp-3.8.4.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_cparser.pxd.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_find_header.pxd.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_helpers.pyi.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_helpers.pyx.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_http_parser.pyx.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_http_writer.pyx.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/_websocket.pyx.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/.hash/hdrs.py.hash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_cparser.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_find_header.pxd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_headers.pxi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_helpers.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_helpers.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_helpers.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_http_parser.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_http_parser.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_http_writer.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_http_writer.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_websocket.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/_websocket.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/abc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/base_protocol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/client_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/client_proto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/client_reqrep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/client_ws.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/connector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/cookiejar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/formdata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/hdrs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/http.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/http_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/http_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/http_websocket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/http_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/locks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/multipart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/payload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/payload_streamer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/pytest_plugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/resolver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/streams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/tcp_helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/tracing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/typedefs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_fileresponse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_protocol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_routedef.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_urldispatcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/web_ws.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiohttp/worker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal-1.3.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/aiosignal/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout-4.0.2.dist-info/zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/async_timeout/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_cmp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_cmp.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_funcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_make.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_next_gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_typing_compat.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_version_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/_version_info.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/converters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/converters.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/exceptions.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/filters.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/setters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/setters.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/validators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attr/validators.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs-22.2.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/converters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/setters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/attrs/validators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist-1.3.3.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist/_frozenlist.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist/_frozenlist.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/frozenlist/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict-6.0.4.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/_abc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/_compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/_multidict.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/_multidict_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/_multidict_py.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/multidict/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai-0.27.2.dist-info/zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/_openai_scripts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_requestor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/createable_api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/deletable_api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/listable_api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/nested_resource_class_methods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/abstract/updateable_api_resource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/audio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/chat_completion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/completion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/customer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/deployment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/edit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/embedding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/error_object.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/experimental/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/experimental/completion_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/fine_tune.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/api_resources/moderation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/datalib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/embeddings_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/object_classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/openai_object.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/openai_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/asyncio/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/asyncio/test_endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_api_requestor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_endpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_file_cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_long_examples_validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_url_composition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/tests/test_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/upload_progress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/validators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/openai/wandb_logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl-1.8.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/__init__.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_quoting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_quoting_c.cpython-310-x86_64-linux-gnu.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_quoting_c.pyi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_quoting_c.pyx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_quoting_py.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/_url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/venv/lib/python3.10/site-packages/yarl/py.typed" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSchema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSchema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/model/processAnamnesisSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ProcessAnamnesis/ui/ProcessAnamnesis.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ChaptersHistoryPage/ui/ChaptersHistoryPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ChaptersHistoryPage/ui/ChaptersHistoryPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage/ui/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/restAPI/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../server/restAPI/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/Router/routeConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/Router/routeConfig.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ICDDiagnosis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ICDDiagnosis/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,6 +115,8 @@
       <workItem from="1680273484230" duration="2923000" />
       <workItem from="1680276819477" duration="67000" />
       <workItem from="1680882828892" duration="17000" />
+      <workItem from="1683556814670" duration="5430000" />
+      <workItem from="1683623333602" duration="12756000" />
     </task>
     <task id="LOCAL-00001" summary="client init">
       <created>1678026489067</created>
