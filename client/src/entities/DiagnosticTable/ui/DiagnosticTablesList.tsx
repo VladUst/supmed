@@ -8,7 +8,7 @@ import { DiagnosticTable } from './DiagnosticTable';
 import { type GridColDef, type GridRenderCellParams, useGridApiContext } from '@mui/x-data-grid';
 import Select, { type SelectChangeEvent } from '@mui/material/Select';
 import * as React from 'react';
-import AddIcon from '@mui/icons-material/Add';
+import { classNames, Text } from '../../../shared';
 
 function SelectEditInputCell (props: GridRenderCellParams) {
   const { id, value, field } = props;
@@ -42,7 +42,13 @@ const renderSelectEditInputCell: GridColDef['renderCell'] = (params) => {
 const blockTableColumns = [
   {
     field: 'parameter',
-    headerName: 'Признак/Влияние',
+    headerName: 'Параметр',
+    editable: true,
+    width: 170
+  },
+  {
+    field: 'type',
+    headerName: 'Тип значения',
     editable: true,
     width: 170
   },
@@ -80,6 +86,7 @@ const blockTableRows = [
   {
     id: 1,
     parameter: 'Кетоацидоз',
+    type: 'Наличие',
     E10: 'Высокое',
     E11: 'Среднее',
     E12: 'Среднее',
@@ -88,6 +95,7 @@ const blockTableRows = [
   {
     id: 2,
     parameter: 'Полипноэ',
+    type: 'Наличие',
     E10: 'Низкое',
     E11: 'Высокое',
     E12: 'Среднее',
@@ -96,6 +104,7 @@ const blockTableRows = [
   {
     id: 3,
     parameter: 'Полифагия',
+    type: 'Наличие',
     E10: 'Высокое',
     E11: 'Высокое',
     E12: 'Высокое',
@@ -118,6 +127,9 @@ const BlockItem = ({ block }: { block: ICDSectionType }) => {
               {isBlockOpen ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={isBlockOpen} timeout="auto" unmountOnExit>
+              <Text className={cls.tableTitle}
+                    title={'Укажите параметры и их влияние на конкретные заболевания'}
+                    align={'center'}/>
               <div className={cls.blockTableWrapper}>
                   <DiagnosticTable height={300} rows={blockTableRows} columns={blockTableColumns}/>
                   <Button
@@ -136,7 +148,13 @@ const BlockItem = ({ block }: { block: ICDSectionType }) => {
 const chapterTableColumns = [
   {
     field: 'parameter',
-    headerName: 'Признак/Влияние',
+    headerName: 'Параметр',
+    editable: true,
+    width: 170
+  },
+  {
+    field: 'type',
+    headerName: 'Тип значения',
     editable: true,
     width: 170
   },
@@ -174,6 +192,7 @@ const chapterTableRows = [
   {
     id: 1,
     parameter: 'Возраст',
+    type: 'Число',
     E00E07: 'Высокое',
     E10E14: 'Высокое',
     E15E16: 'Высокое',
@@ -182,6 +201,7 @@ const chapterTableRows = [
   {
     id: 2,
     parameter: 'Пол',
+    type: 'Диапазон: Мужской, Женский',
     E00E07: 'Среднее',
     E10E14: 'Высокое',
     E15E16: 'Высокое',
@@ -190,6 +210,7 @@ const chapterTableRows = [
   {
     id: 3,
     parameter: 'Ожирение',
+    type: 'Наличие',
     E00E07: 'Среднее',
     E10E14: 'Низкое',
     E15E16: 'Высокое',
@@ -197,7 +218,8 @@ const chapterTableRows = [
   },
   {
     id: 4,
-    parameter: 'Уровень тиреотропного гормона',
+    parameter: 'Уровень тиреотропного гормона, мЕд/л',
+    type: 'Число',
     E00E07: 'Низкое',
     E10E14: 'Низкое',
     E15E16: 'Высокое',
@@ -210,13 +232,13 @@ interface DiagnosticTablesListProps {
   item: ICDListItemType
 }
 export const DiagnosticTablesList = memo((props: DiagnosticTablesListProps) => {
-  const { item } = props;
+  const { className, item } = props;
   const [isChapterOpen, setIsChapterOpen] = useState(false);
   const handleChapterClick = () => {
     setIsChapterOpen(open => !open);
   };
   return (
-      <>
+      <div className={classNames(cls.DiagnosticTablesList, {}, [className])}>
           <ListItemButton onClick={handleChapterClick}>
               <ListItemText
                     className={cls.itemText}
@@ -225,11 +247,12 @@ export const DiagnosticTablesList = memo((props: DiagnosticTablesListProps) => {
               {isChapterOpen ? <ExpandLess /> : <ExpandMore />}
           </ListItemButton>
           <Collapse in={isChapterOpen} timeout="auto" unmountOnExit>
+              <Text className={cls.tableTitle} title={'Укажите параметры и их влияние на классы заболеваний'} align={'center'}/>
               <DiagnosticTable height={400} rows={chapterTableRows} columns={chapterTableColumns}/>
               {item.blocks?.map((block) => (
                   <BlockItem key={block.name} block={block}/>
               ))}
           </Collapse>
           <hr/>
-      </>);
+      </div>);
 });

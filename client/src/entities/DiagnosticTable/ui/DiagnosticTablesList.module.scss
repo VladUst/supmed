@@ -1,15 +1,22 @@
+.DiagnosticTablesList {
+  width: 50vw;
+}
+
 .itemText {
   color: var(--blue-secondary);
 }
 
 .blockItemWrapper {
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .blockTableWrapper {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.tableTitle {
+  margin-bottom: 10px;
 }

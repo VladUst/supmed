@@ -5,22 +5,22 @@ import {
 } from '@mui/x-data-grid';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Box, Button } from '@mui/material';
+import { Button } from '@mui/material';
 
 function EditToolbar () {
   return (
       <div className={cls.btnWrapper}>
           <Button
-            size="small"
-            endIcon={<AddIcon/>}
-        >
+                  size="small"
+                  endIcon={<AddIcon/>}
+              >
               Добавить
           </Button>
           <Button
-            size="small"
-            color="error"
-            endIcon={<DeleteIcon/>}
-        >
+                  size="small"
+                  color="error"
+                  endIcon={<DeleteIcon/>}
+              >
               Удалить
           </Button>
       </div>

@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="icd diagnosis result api integration">
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/model/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/imdex.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/ui/UpdateDataPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/UpdateDataPage/ui/UpdateDataPage.tsx" afterDir="false" />
+    <list default="true" id="a0157768-1720-4deb-9782-95350471adaa" name="Changes" comment="update data page created">
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/pym.sqlite3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/pym.sqlite3-journal" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../server/restAPI/api/service/umlsService/umls-2022AB-metathesaurus-full.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/providers/Router/routeConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/providers/Router/routeConfig.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ICDDiagnosis/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ICDDiagnosis/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Navbar/ui/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/DiagnosticTable/ui/DiagnosticTablesList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/DiseasesDiagnostic/ui/DiseasesDiagnostic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ResultNote/ui/ResultNote.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ResultNote/ui/ResultNote.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ResultNote/ui/ResultNote.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ResultNote/ui/ResultNote.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +108,9 @@
       <workItem from="1680276819477" duration="67000" />
       <workItem from="1680882828892" duration="17000" />
       <workItem from="1683556814670" duration="5430000" />
-      <workItem from="1683623333602" duration="12756000" />
+      <workItem from="1683623333602" duration="13019000" />
+      <workItem from="1683873073017" duration="875000" />
+      <workItem from="1683886520900" duration="8621000" />
     </task>
     <task id="LOCAL-00001" summary="client init">
       <created>1678026489067</created>
@@ -167,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679152342480</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update data page created">
+      <created>1683637663117</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683637663117</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +182,7 @@
     <MESSAGE value="process anamnesis api integration" />
     <MESSAGE value="diagnostic api integration" />
     <MESSAGE value="icd diagnosis result api integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="icd diagnosis result api integration" />
+    <MESSAGE value="update data page created" />
+    <option name="LAST_COMMIT_MESSAGE" value="update data page created" />
   </component>
 </project>

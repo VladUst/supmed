@@ -29,7 +29,7 @@ const DiseasesList = ({ diseases }: DiseasesListProps) => {
   }
   return (
       <div className={cls.result}>
-          <Text title={'Результаты диагностики: '} />
+          <Text title={'Результаты первичной диагностики: '} />
           <ul>
               {diseases.map((disease) => (
                   <li key={disease.name}>
@@ -86,7 +86,7 @@ export const DiseasesDiagnostic = memo((props: DiseasesDiagnosticProps) => {
                       endIcon={<DiagnosticIcon/>}
                       onClick={handleSubmit}
                   >
-                      Диагностика
+                      Первичная диагностика
                   </Button>
               </div>
           </form>
